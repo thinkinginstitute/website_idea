@@ -17,7 +17,7 @@ const bull = (
 
 export default function BasicCard({ content }) {
   return (
-    <Card sx={{ minWidth: 275 }}>
+    <Card sx={{ maxWidth: '70%' }}>
       <CardContent>
         <Typography variant='h5' component='div'>
           Heading

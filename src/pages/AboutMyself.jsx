@@ -1,8 +1,7 @@
-import { Grid, Paper, Typography } from '@mui/material';
+import { Box, Grid, Paper, Typography } from '@mui/material';
 import React from 'react';
 import me from '../assets/me.jpeg';
-import MyTimeline from '../components/navbar/MyTimeline';
-
+import MyTimeline from '../components/MyTimeline';
 const styles = {
   container: {
     marginTop: 20,
@@ -22,6 +21,11 @@ const styles = {
     flexDirection: 'column',
     padding: 20,
     boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+  },
+  box: {
+    display: 'flex',
+    justifyContent: 'flex-start',
+    padding: 20,
   },
 };
 
@@ -48,7 +52,9 @@ function AboutMyself() {
           <img src={me} alt='My Alt Text' style={styles.image} />
         </Grid>
       </Grid>
-      <MyTimeline />
+      <Box style={styles.box}>
+        <MyTimeline />
+      </Box>
     </>
   );
 }

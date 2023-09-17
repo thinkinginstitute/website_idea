@@ -1,9 +1,10 @@
-import Navbar from './components/navbar/Navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Introduction from './pages/Introduction';
-import { Article } from '@mui/icons-material';
 import AboutMyself from './pages/AboutMyself';
 import Contact from './pages/Contact';
+import Navbar from './components/Navbar';
+import BottomContact from './components/BottomContact';
+import Article from './pages/Article';
 function App() {
   return (
     <div className='App'>
@@ -14,6 +15,7 @@ function App() {
         <Route path='/about' Component={AboutMyself}></Route>
         <Route path='/contacts' Component={Contact}></Route>
       </Routes>
+      <BottomContact />
     </div>
   );
 }
